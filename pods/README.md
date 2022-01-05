@@ -36,7 +36,7 @@ $ kubectl describe pods/WebApp
 ### Executing commands on pods
 **Syntax** - kubectl exec POD_NAME CMD_TO_EXECUTE
 ```
-$ kubectl exec nodeapp printenv
+$ kubectl exec WebApp printenv
 ```
 ### Getting into pods Terminal
 **Syntax** - kubectl exec -it POD_NAME bash
@@ -46,7 +46,7 @@ $ kubectl exec -it WebApp bash
 ### Get logs from pods
 **Syntax** - kubectl logs POD_NAME
 ```
-$ kubectl logs nodeapp
+$ kubectl logs WebApp
 ```
 ## Exposing Pods to Internet
 By default Pods run in a isolated environment i.e. they are reachable within kubernetes cluster, if you wanna reach your pod outside cluster, You have to expose it
