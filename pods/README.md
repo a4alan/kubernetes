@@ -6,19 +6,19 @@ Get the file [(pod.yml)](https://github.com/javahometech/kubernetes/blob/master/
 apiVersion: v1
 kind: Pod
 metadata:
-  name: nodeapp
+  name: WebApp
   labels:
     app: nodeapp
 spec:
   containers:
     - name: nodeapp
-      image: kammana/nodeapp:v1
+      image: a4lan/WebApp:v1
       ports:
         - containerPort: 8080
 ```
 
 ```
-$ kubectl create -f https://raw.githubusercontent.com/javahometech/kubernetes/master/pods/pods.yml
+$ kubectl create -f https://raw.githubusercontent.com/a4alan/kubernetes/master/pods/pods.yml
 ```
 ### Command to get all pods
 
